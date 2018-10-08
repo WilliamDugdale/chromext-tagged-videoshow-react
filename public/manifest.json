@@ -1,0 +1,18 @@
+{
+    "name": "Random Video Playlist Generator On React",
+    "version": "1.0",
+    "description": "Takes booksmarks and generates a random full screen playlist",
+    "background": {
+        "scripts": ["init.js"],
+        "persistent": false
+      },
+    "permissions": [
+        "storage", "tabs", "http://*/*", "https://*/*", "bookmarks"
+      ],
+      "browser_action": {
+        "default_popup": "index.html",
+        "default_title": "Generate Playlist"
+      },
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "manifest_version": 2
+  }
